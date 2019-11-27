@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "types" : ["phaser", "node"],
+        "target": "ES5",
+        "module": "commonjs",
+        "outDir":"export/html5/out",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "plugins": [
+            {
+              "name": "typescript-tslint-plugin",
+              "alwaysShowRuleFailuresAsWarnings": false,
+              "ignoreDefinitionFiles": true,
+              "suppressWhileTypeErrorsPresent": true
+            }
+        ]
+    },"include": [
+        "src/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+
+
+}
